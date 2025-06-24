@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alesa</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="img/logo_alesa.png" alt="Logo Alesa" />
+    </div>
+
+    <div class="buscador">
+      <input type="text" placeholder="BÚSQUEDA" />
+    </div>
+
+    <nav class="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Nosotros</a>
+      <a href="#">¿Qué Hacemos?</a>
+      <a href="#">Novedades</a>
+      <a href="#">Contacto</a>
+    </nav>
+
+    <div class="login">
+      <img src="./img/icono.png" alt="Usuario" class="icono-usuario" />
+      <a href="#" id="btnLogin">Iniciar Sesión</a> |
+      <a href="#" id="btnRegister">Registrarse</a>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Sección de franjas -->
+    <div class="contenedor-franjas">
+      <!-- Franja azul con puntos -->
+      <div class="franja-azul">
+        <div class="puntos-blancos">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Franja blanca con logo y texto -->
+      <div class="franja-blanca">
+        <div class="contenido-franja">
+          <img src="img/logo_alesa.png" alt="Logo Alesa" class="logo-alesa" />
+          <h1 class="texto-asociacion">ASOCIACIÓN DE PRODUCCIÓN TEXTIL EMPRENDEDORES ALESA</h1>
+        </div>
+      </div>
+
+      <!-- Franja naranja con imagen -->
+      <div class="franja-naranja">
+        <div class="cinta-naranja"></div>
+        <img src="img/maquina.jpg" alt="Máquina de coser industrial" class="imagen-maquina" />
+        <div class="cinta-naranja"></div>
+      </div>
+    </div>
+
+    <!-- Sección Quiénes somos -->
+    <section class="quienes-somos">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">¿Quiénes somos?</h2>
+        
+        <div class="contenido">
+          <!-- Primer cuadro -->
+          <div class="cuadro-texto">
+            <div class="imagen-cuadro">
+              <img src="img/lista.png" alt="Icono lista">
+            </div>
+            <p class="texto-cuadro">
+              ALESA es una organización textil en Ecuador que opera bajo principios de Economía Popular y Solidaria. 
+              Se especializa en la manufactura de prendas para dotaciones empresariales y productos promocionales, 
+              con 15 años de experiencia, destacándose como referente en el sector.
+            </p>
+          </div>
+          
+          <!-- Segundo cuadro -->
+          <div class="cuadro-texto">
+            <div class="imagen-cuadro">
+              <img src="img/callif.jpg" alt="Icono calidad">
+            </div>
+            <p class="texto-cuadro">
+              ALESA se enfoca en satisfacer las necesidades de los clientes mediante soluciones creativas y 
+              personalizadas en vestimenta y promoción de marca. Colaboramos estrechamente para entender sus 
+              visiones y metas, adaptando nuestros productos y servicios para lograr el éxito conjunto.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Logo central derecho -->
+      <div class="logo-central-derecho">
+        <img src="img/logo_alesa.png" alt="Logo ALESA">
+      </div>
+      
+      <!-- Franja azul lateral derecha -->
+      <div class="franja-azul-derecha"></div>
+    </section>
+
+    <!-- Sección Qué Hacemos -->
+<section class="que-hacemos-section">
+  <div class="section-container">
+    <div class="titulo-contenedor">
+      <h2 class="section-title">¿QUÉ HACEMOS?</h2>
+    </div>
+    
+    <div class="hacemos-grid">
+      <!-- Primer item -->
+      <div class="hacemos-card">
+        <div class="hacemos-icono">
+          <img src="img/variedad.png" alt="Variedad de productos">
+        </div>
+        <div class="hacemos-contenido">
+          <p>Ofrecemos una variada selección de prendas de vestir, desde prendas personalizadas a la medida, hasta uniformes corporativos y ropa deportiva. Cada pieza está cuidadosamente diseñada y fabricada utilizando materiales de excelencia y técnicas de confección avanzada mediante programas, lo que garantiza un acabado excepcional y duradero.</p>
+        </div>
+      </div>
+      
+      <!-- Segundo item -->
+      <div class="hacemos-card">
+        <div class="hacemos-icono">
+          <img src="img/promocion.png" alt="Productos promocionales">
+        </div>
+        <div class="hacemos-contenido">
+          <p>En Alesa, también nos enorgullecemos de nuestra oferta de artículos promocionales personalizados que ayudan a las empresas a destacar en el mercado. Desde bolígrafos, libretas, bolsos, gorras, tazas, vasos, etc. nuestra gama de productos promocionales ofrece oportunidades creativas para la visibilidad de la marca y el reconocimiento de la empresa.</p>
+        </div>
+      </div>
+      
+      <!-- Tercer item -->
+      <div class="hacemos-card">
+        <div class="hacemos-icono">
+          <img src="img/calidad.png" alt="Alta calidad">
+        </div>
+        <div class="hacemos-contenido">
+          <p>Realizamos productos de alta calidad que cumplen con los estándares y requisitos de los clientes, implementando controles de rigurosidad durante el proceso de fabricación, garantizando que los productos finales sean duraderos y cumplan las expectativas de nuestros clientes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+    <!-- Sección Lineamientos -->
+    <section class="lineamientos">
+      <div class="imagen-superior">
+        <img src="./img/fondo_lineamientos.png" alt="Persona cosiendo" class="img-coser">
+      </div>
+      
+      <div class="contenedor-principal">
+        <!-- Logo ALESA en lado izquierdo -->
+        <div class="logo-alesa">
+          <img src="img/logo_alesa.png" alt="Logo ALESA">
+        </div>
+        
+        <!-- Contenido de lineamientos a la derecha -->
+        <div class="contenido-lineamientos">
+          <!-- Título en cuadro redondeado -->
+          <div class="titulo-lineamientos">
+            <h1>LINEAMIENTOS</h1>
+          </div>
+          
+          <!-- Misión -->
+          <div class="bloque-info">
+            <div class="icono">
+              <img src="./img/mision.png" alt="Icono misión">
+            </div>
+            <div class="texto">
+              <h2>MISIÓN</h2>
+              <p>
+                Fabricamos dotaciones textiles empresariales personalizadas que se adaptan a las necesidades de 
+                nuestros clientes, garantizando su utilidad, comodidad y conford con buenas prácticas de manufactura.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Visión -->
+          <div class="bloque-info">
+            <div class="icono">
+              <img src="./img/icono_vision.png" alt="Icono visión">
+            </div>
+            <div class="texto">
+              <h2>VISIÓN</h2>
+              <p>
+                Ser una asociación líder en el mercado de la industria textil a nivel provincial, estableciendo 
+                relaciones sólidas con nuestros proveedores y socios, brindando un excelente servicio al cliente: 
+                contribuyendo al desarrollo económico y social de la provincia en la que operamos, generando empleo, 
+                promoviendo la equidad y bienestar colectivo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Objetivo General -->
+<section class="objetivo-general-section">
+  <div class="objetivo-container">
+    <div class="objetivo-content">
+      <div class="objetivo-texto">
+        <h2 class="objetivo-titulo">OBJETIVO GENERAL</h2>
+        <div class="objetivo-parrafo">
+          <p>Lograr un crecimiento sostenible empresarial ingresando a nuevos mercados geográficos, tanto a nivel nacional como internacional, para ampliar la base de clientes y aprovechar nuevas oportunidades de negocio, fomentando el crecimiento de la asociación, mediante la implementación de estrategias efectivas para obtener mejores resultados, promoviendo la inclusión y el desarrollo sostenible de la economía popular y solidaria en el sector textil.</p>
+        </div>
+      </div>
+      <div class="objetivo-imagen">
+        <img src="img/objetivoG.png" alt="Objetivo General ALESA">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Sección Objetivos Específicos -->
+    <section class="objetivos-especificos">
+      <div class="contenedor-objetivos">
+        <!-- Columna izquierda con texto -->
+        <div class="columna-texto">
+          <!-- Título en cuadro azul -->
+          <div class="titulo-cuadro-azul">
+            <h1 class="titulo-objetivos">OBJETIVOS ESPECÍFICOS</h1>
+          </div>
+          
+          <!-- Cuadro de objetivos -->
+          <div class="cuadro-objetivos">
+            <div class="objetivo">
+              <h3>OBJETIVO 1</h3>
+              <p>Garantizar que los productos finales sean duraderos y cumplan las expectativas del cliente.</p>
+            </div>
+            
+            <div class="objetivo">
+              <h3>OBJETIVO 2</h3>
+              <p>Fomentar la inclusión económica y social de grupos vulnerables y comunidades locales al tiempo que se promueve un modelo de negocio responsable y ético.</p>
+            </div>
+            
+            <div class="objetivo">
+              <h3>OBJETIVO 3</h3>
+              <p>Impulsar la producción responsable de la cadena de suministros textil a través de la integración de emprendimientos de la economía popular y solidaria, generando un impacto social positivo y promoviendo prácticas responsables en toda la industria textil.</p>
+            </div>
+            
+            <div class="objetivo">
+              <h3>OBJETIVO 4</h3>
+              <p>Incrementar las compras internacionales de productos textiles en la compañía "Alesa" mediante la mejora de los materiales de alta calidad, con el fin de superar las expectativas de los clientes, implementando estrategias para mejorar las ventas en el mercado.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Columna derecha con imagen -->
+        <div class="columna-imagen">
+          <div class="imagen-objetivos">
+            <img src="img/objetivos.png" alt="Imagen objetivos" class="img-objetivos">
+            <div class="logo-centro">
+              <img src="img/logo_alesa.png" alt="Logo ALESA">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sección Propuesta de Valor -->
+<section class="propuesta-valor-section">
+  <div class="propuesta-container">
+    <div class="propuesta-header">
+      <h2 class="propuesta-titulo">PROPUESTA DE VALOR</h2>
+    </div>
+    
+    <div class="propuesta-content">
+      <div class="propuesta-texto">
+        <p>La propuesta de valor de la empresa de producción textil Alesa se basa en la creación de productos textiles de alto nivel y calidad, con diseño excepcional, utilizando materiales respetuosos con el medio ambiente y prácticas respetuosas. La empresa busca destacar a través de la innovación en textiles y la colaboración con artesanos locales, fomentando así la comunidad y el empoderamiento femenino.</p>
+      </div>
+      
+      <div class="propuesta-imagen">
+        <img src="img/propuesta.png" alt="Propuesta de Valor ALESA">
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Sección Qué Ofrecemos -->
+<section class="que-ofrecemos">
+  <div class="section-container">
+    <div class="titulo-contenedor">
+      <h2 class="section-title">QUÉ OFRECEMOS?</h2>
+    </div>
+    
+    <div class="productos-grid">
+      <!-- Uniformes Ejecutivos -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./img/que ofrecemos/image1.png" alt="Uniformes Ejecutivos">
+        </div>
+        <h3>UNIFORMES EJECUTIVOS</h3>
+      </div>
+      
+      <!-- Polos -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./img/que ofrecemos/image2.png" alt="Polos">
+        </div>
+        <h3>POLOS</h3>
+      </div>
+      
+      <!-- Trajes -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./img/que ofrecemos/image3.png" alt="Trajes">
+        </div>
+        <h3>TRAJES</h3>
+      </div>
+      
+      <!-- Uniformes Deportivos -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./img/que ofrecemos/image4.png" alt="Uniformes Deportivos">
+        </div>
+        <h3>UNIFORMES DEPORTIVOS</h3>
+      </div>
+      
+      <!-- Uniformes Médicos -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./img/que ofrecemos/image5.png" alt="Uniformes Médicos">
+        </div>
+        <h3>UNIFORMES MÉDICOS</h3>
+      </div>
+      
+      <!-- Uniformes Escolares -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./img/que ofrecemos/image6.png" alt="Uniformes Escolares">
+        </div>
+        <h3>UNIFORMES ESCOLARES</h3>
+      </div>
+      
+      <!-- Uniformes de Trabajo -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./img/que ofrecemos/image7.png" alt="Uniformes de Trabajo">
+        </div>
+        <h3>UNIFORMES DE TRABAJO</h3>
+      </div>
+      
+      <!-- Uniformes de Bomberos -->
+      <div class="producto-card">
+        <div class="producto-imagen">
+          <img src="./img/que ofrecemos/image8.png" alt="Uniformes de Bomberos">
+        </div>
+        <h3>UNIFORMES DE BOMBEROS</h3>
+      </div>
+    </div>
+    
+    <div class="descripcion-contenedor">
+      <p class="descripcion-texto">Entre muchas cosas más, nuestros productos se caracterizan por su diseño moderno, comodidad y durabilidad. Además, ofrecemos opciones de personalización para satisfacer las necesidades específicas de nuestros clientes, como la inclusión de logotipos o diseños personalizados en los productos.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sección Con Quiénes Trabajamos -->
+<section class="clientes-section">
+  <div class="section-container">
+    <div class="titulo-contenedor">
+      <h2 class="section-title">CON QUIÉNES TRABAJAMOS</h2>
+    </div>
+    
+    <div class="clientes-grid">
+      <!-- Cliente 1 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/CUERPO_DE_AGENTES.png" alt="CUERPOS DE AGENTES">
+        </div>
+        <div class="cliente-nombre">CUERPOS DE AGENTES DE CONTROL</div>
+      </div>
+      
+      <!-- Cliente 2 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/municipalidad.png" alt="MUNICIPALIDAD">
+        </div>
+        <div class="cliente-nombre">MUNICIPALIDAD DE SANTO DOMINGO</div>
+      </div>
+      
+      <!-- Cliente 3 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/EMAPA.png" alt="EPMAPA - SD">
+        </div>
+        <div class="cliente-nombre">EPMAPA - SD</div>
+      </div>
+      
+      <!-- Cliente 4 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/EPMT.png" alt="EPMT-SD">
+        </div>
+        <div class="cliente-nombre">EPMT-SD</div>
+      </div>
+      
+      <!-- Cliente 5 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/BOMBEROS.png" alt="CUERPO DE BOMBEROS">
+        </div>
+        <div class="cliente-nombre">CUERPO DE BOMBEROS</div>
+      </div>
+      
+      <!-- Cliente 6 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/PIPCOFFEE.png" alt="PipCoffee">
+        </div>
+        <div class="cliente-nombre">PipCoffee</div>
+      </div>
+      
+      <!-- Cliente 7 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/CARNE.jpg" alt="SANTO DOMINGO CAPITAL DE LA CARNE">
+        </div>
+        <div class="cliente-nombre">SANTO DOMINGO CAPITAL DE LA CARNE</div>
+      </div>
+      
+      <!-- Cliente 8 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/SANRAFAEL.png" alt="SPI GRUPO SAN RAFAEL">
+        </div>
+        <div class="cliente-nombre">SPI GRUPO SAN RAFAEL</div>
+      </div>
+
+      <!-- Cliente 9 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/PAJAROROJO.jpg" alt="BAR EL PAJARO ROJO">
+        </div>
+        <div class="cliente-nombre">BAR EL PAJARO ROJO</div>
+      </div>
+      
+      <!-- Cliente 10 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/logo-foproca.png" alt="FOPROCA">
+        </div>
+        <div class="cliente-nombre">FOPROCA</div>
+      </div>
+
+      <!-- Cliente 11 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/SRI.png" alt="SRI">
+        </div>
+        <div class="cliente-nombre">SERVICIO DE RENTAS INTERNAS</div>
+      </div>
+
+      <!-- Cliente 12 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/CNE.png" alt="CNE">
+        </div>
+        <div class="cliente-nombre">CONCEJO NACIONAL ELECTORAL</div>
+      </div>
+
+      <!-- Cliente 13 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/DISENSA.png" alt="DISENSA">
+        </div>
+        <div class="cliente-nombre">DISENSA</div>
+      </div>
+
+      <!-- Cliente 14 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/serpec.png" alt="SERPEC">
+        </div>
+        <div class="cliente-nombre">SERPEC SERVICIOS PECUARIOS</div>
+      </div>
+
+      <!-- Cliente 15 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/fogata.png" alt="FOSFOROS">
+        </div>
+        <div class="cliente-nombre">FOGATA</div>
+      </div>
+
+      <!-- Cliente 16 -->
+      <div class="cliente-card">
+        <div class="cliente-logo">
+          <img src="./img/PRIMAVERA.png" alt="PRIMAVERA">
+        </div>
+        <div class="cliente-nombre">MADERAS LA PRIMAVERA</div>
+      </div>
+      <!-- Repite para los clientes 9 al 16 -->
+      <!-- ... -->
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <!-- Logo y nombre -->
+    <div class="footer-brand">
+      <img src="img/logo_alesa.png" alt="Logo ALESA" class="footer-logo">
+      <h3>ALESA</h3>
+      <p>Asociación de Producción Textil Emprendedores</p>
+    </div>
+
+    <!-- Sección de contacto -->
+    <div class="footer-contact">
+      <h4>CONTACTOS</h4>
+      <ul class="contact-info">
+        <li>
+          <img src="./img/WhatsApp.png" alt="Teléfono">
+          <span>099 067 519</span>
+        </li>
+        <li>
+          <img src="./img/Gmail.png" alt="Email">
+          <span>asotextilalesa@gmail.com</span>
+        </li>
+        <li>
+          <img src="./img/Instagram.png" alt="Instagram">
+          <span>@alesasoprotexempre</span>
+        </li>
+        <li>
+          <img src="./img/ubicacion.png" alt="Dirección">
+          <span>Calle Rio Putumayo y Av. Tsáchila</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="footer-social">
+      <h4>SÍGUENOS</h4>
+      <div class="social-icons">
+        <a href="#"><img src="./img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="./img/Instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="./img/WhatsApp.png" alt="WhatsApp"></a>
+      </div>
+      
+      <div class="footer-message">
+        <p>GRACIAS POR VISITARNOS</p>
+        <p>Tu apoyo impulsa nuestra comunidad textil</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Derechos reservados -->
+  <div class="footer-bottom">
+    <div class="footer-legal">
+      <p>&copy; 2023 ALESA. Todos los derechos reservados.</p>
+      <div class="legal-links">
+        <a href="#">Política de privacidad</a>
+        <a href="#">Términos de servicio</a>
+        <a href="#">Aviso legal</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- Modales -->
+  <div class="modal" id="loginModal">
+    <div class="formulario-login">
+      <img src="img/logo_alesa.png" alt="Logo Alesa" class="logo-form" />
+      <h2>INICIAR SESIÓN</h2>
+      <form>
+        <input type="text" placeholder="Usuario o correo electrónico" required />
+        <input type="password" placeholder="Contraseña" required />
+        <div class="recordar">
+          <label>
+            <input type="checkbox" />
+            Recordar contraseña
+          </label>
+        </div>
+        <button type="submit">Entrar</button>
+        <div class="olvidaste">
+          <a href="#">¿Olvidaste tu contraseña?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="registroModal">
+    <div class="formulario-registro">
+      <img src="img/logo_alesa.png" alt="Logo Alesa" class="logo-form" />
+      <h2>REGISTRO DE USUARIO</h2>
+      <form>
+        <input type="text" placeholder="Nombre / apellido" required />
+        <input type="text" placeholder="Usuario" required />
+        <input type="email" placeholder="example@gmail.com" required />
+        <input type="password" placeholder="Contraseña" required />
+        <input type="password" placeholder="Repetir contraseña" required />
+        <button type="submit">Registrar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

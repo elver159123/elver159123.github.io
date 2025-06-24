@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Alesa</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/user-panel.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- encabezado -->
+        <header class="header">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="img/logo_alesa.png" alt="Logo Alesa">
+                </div>
+                
+                <div class="header-right">
+                    <div class="buscador">
+                        <input type="text" placeholder="BÚSQUEDA">
+                    </div>
+                    
+                    <div class="user-actions">
+                        <span class="welcome">Bienvenido, <strong id="current-user">Usuario</strong></span>
+                        <button class="logout-btn">
+                            <img src="./img/logout.png" alt="Cerrar sesión">
+                            Cerrar sesión
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <!-- Panel de usuario -->
+            <aside class="user-panel">
+                <div class="user-header">
+                    <img src="img/icono.png" alt="Icono de usuario" class="user-icon">
+                    <span class="username" id="panel-username">Usuario</span>
+                </div>
+                
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <input type="checkbox" id="home" checked>
+                        <label for="home">
+                            <img src="img/icons/home.png" alt="Home">
+                            <span>Inicio</span>
+                        </label>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <input type="checkbox" id="clientes">
+                        <label for="clientes">
+                            <img src="img/icons/clientes.png" alt="Clientes">
+                            <span>Clientes</span>
+                        </label>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <input type="checkbox" id="proveedores">
+                        <label for="proveedores">
+                            <img src="img/icons/proveedores.png" alt="Proveedores">
+                            <span>Proveedores</span>
+                        </label>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <input type="checkbox" id="reportes">
+                        <label for="reportes">
+                            <img src="img/icons/reportes.png" alt="Reportes">
+                            <span>Reportes</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="logout-section">
+                    <button class="logout-btn">
+                        <img src="./img/logout.png" alt="Cerrar sesión">
+                        Cerrar sesión
+                    </button>
+                </div>
+            </aside>
+
+            <!-- Contenido principal -->
+            <main class="main-content">
+                <div class="content-container">
+                    <h2>Bienvenido al Dashboard</h2>
+                    <p>Seleccione una opción del menú para comenzar.</p>
+                    <!-- El contenido dinámico se cargará aquí -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/user-panel.js"></script>
+    
+    <script>
+        // Cargar nombre de usuario desde sesión
+        document.addEventListener('DOMContentLoaded', function() {
+            const storedUser = localStorage.getItem('alesa-current-user') || 'Usuario';
+            document.getElementById('current-user').textContent = storedUser;
+            document.getElementById('panel-username').textContent = storedUser;
+        });
+    </script>
+</body>
+</html>
