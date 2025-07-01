@@ -1,0 +1,32 @@
+<div class="formulario-registro">
+  <img src="../img/logo_alesa.png" alt="Logo Alesa" class="logo-form">
+  <h2>REGISTRO DE USUARIO</h2>
+  <form id="registerForm">
+    <div class="input-group">
+      <input type="text" placeholder="Nombre completo" required>
+    </div>
+    <div class="input-group">
+      <input type="text" placeholder="Usuario" required>
+    </div>
+    <div class="input-group">
+      <input type="email" placeholder="Correo electrónico" required>
+    </div>
+    <div class="input-group">
+      <input type="password" placeholder="Contraseña" required>
+    </div>
+    <div class="input-group">
+      <input type="password" placeholder="Repetir contraseña" required>
+    </div>
+    <div class="form-options">
+      <label class="terms">
+        <input type="checkbox" required>
+        <span>Acepto los <a href="#">términos y condiciones</a></span>
+      </label>
+    </div>
+    <button type="submit" class="btn-submit">Registrar</button>
+    <div class="login-link">
+      ¿Ya tienes cuenta? <a href="#" onclick="loadModal('login')">Inicia sesión aquí</a>
+    </div>
+  </form>
+  <button class="close-modal" onclick="closeModal('registro')">×</button>
+</div>

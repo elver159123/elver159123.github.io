@@ -1,0 +1,24 @@
+<div class="formulario-login">
+  <img src="../img/logo_alesa.png" alt="Logo Alesa" class="logo-form">
+  <h2>INICIAR SESIÓN</h2>
+  <form id="loginForm">
+    <div class="input-group">
+      <input type="text" placeholder="Usuario o correo electrónico" required>
+    </div>
+    <div class="input-group">
+      <input type="password" placeholder="Contraseña" required>
+    </div>
+    <div class="form-options">
+      <label class="remember-me">
+        <input type="checkbox">
+        <span>Recordar contraseña</span>
+      </label>
+      <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+    </div>
+    <button type="submit" class="btn-submit">Entrar</button>
+    <div class="register-link">
+      ¿No tienes cuenta? <a href="#" onclick="loadModal('registro')">Regístrate aquí</a>
+    </div>
+  </form>
+  <button class="close-modal" onclick="closeModal('login')">×</button>
+</div>
